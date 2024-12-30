@@ -1,0 +1,84 @@
+ 1  sudo yum install git
+    2  sudo yum list maven
+    3  sudo yum install maven
+    4  mvn -v
+    5  git status
+    6  mkdir demomaven_project
+    7  cd demomaven_project/
+    8  git status
+    9  ls
+   10  cd
+   11  ls
+   12  rm -rf demomaven_project/
+   13  mvn archetype:generate -DgroupId=shashi.com -DartifactId=passport-app -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeVersion=1.5     
+   14  ls
+   15  mvn clean
+   16  ls
+   17  cd passport-app/
+   18  mvn clean
+   19  ls
+   20  cd
+   21  ls
+   22  cd passport-app/
+   23  mvn clean install
+   24  ls
+   25  cd target/
+   26  ls
+   27  java -cp passport-app-1.0-SNAPSHOT.jar shashi.com.App
+   28  cd ../src/main/java/shashi/com/
+   29  ls
+   30  vim App.java
+   31  ls
+   32  cd
+   33  ls
+   34  cd pass
+   35  cd passport-app/
+   36  cd target/
+   37  mvn clean
+   38  ls
+   39  cd-
+   40  cd ..
+   41  ls
+   42  mvn clean
+   43  ls
+   44  mvn clean install
+   45  ls
+   46  cd target/
+   47  ls
+   48  java -cp passport-app-1.0-SNAPSHOT.jar shashi.com.App
+   49  cd ..
+   50  mvn clean
+   51  ls
+   52  git init
+   53  git status
+   54  git branch
+   55  git add .
+   56  git commit -m "added for maven "
+   57  git status
+   58  git branch
+   59  git checkout -b development
+   60  git branch
+   61  git push -u origin development
+   62  git remote add origin git@github.com:Shashikuamar/maven_passport.git
+   63  git remote -v
+   64  git push -u origin development
+   65  ssh-keygen -t rsa
+   66  cat git@github.com:Shashikuamar/maven_passport.git
+   67  sudo cat git@github.com:Shashikuamar/maven_passport.git
+   68  /home/ec2-user/.ssh/id_rsa
+   69  sudo cat /home/ec2-user/.ssh/id_rsa
+   70  sudo cat /home/ec2-user/.ssh/id_rsa.pub
+   71  git push -u origin development
+   72  git remote -v
+   73  vim Jenkins_redhat_install.sh
+   74  sudo systemctl status Jenkins
+   75  chmod +x  Jenkins_redhat_install.sh
+   76  ./ Jenkins_redhat_install.sh
+   77  ./Jenkins_redhat_install.sh
+   78  sudo systemctl enable jenkins
+   79  sudo systemctl start jenkins
+   80  sudo systemctl status jenkins
+   81  sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+   82  ls -l
+   83  mvn -v
+   84  git branch
